@@ -10,9 +10,12 @@
         <h2>
             Select By Tag Name
         </h2>
+        <input placeholder="Enter ID"><br><br>
+        <div id="section_two">
         <input placeholder="Enter First Name"><br><br>
         <input placeholder="Enter Last Name"><br><br>
         <input placeholder="Enter Country Name"><br><br>
+        </div>
         <button onclick="check()">submit</button>
 
         <p> </p>
@@ -23,7 +26,9 @@
 
     <script>
         function check(){
-            box = document.getElementsByTagName("input");
+
+            area = document.getElementById("section_two")
+            box = section_two.getElementsByTagName("input");
             data = document.getElementsByTagName("p");
 
           /*  data[0].innerHTML = box[0].value;
