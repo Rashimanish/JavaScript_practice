@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="..\styleform.css"></link>
+    <script src="..\form.js"></script>
 </head>
 <body>
     <div>
@@ -22,28 +24,5 @@
         <p> </p>
         <p> </p>
     </div>
-    <!------Java Script-->
-
-    <script>
-        function check(){
-
-            area = document.getElementById("section_two")
-            box = section_two.getElementsByTagName("input");
-            data = document.getElementsByTagName("p");
-
-          /*  data[0].innerHTML = box[0].value;
-            data[1].innerHTML = box[1].value;
-            data[2].innerHTML = box[2].value;*/
-
-            //when the number of items are large - use FOR loop
-
-            for(i=0;i<box.length;i++){
-                data[i].innerHTML = box[i].value;
-
-            }
-
-
-        }
-    </script>
 </body>
 </html>
