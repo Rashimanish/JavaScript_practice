@@ -23,3 +23,9 @@ button{
 
 }
 
+.myclass{
+    color: rgb(47, 9, 83);
+    background-color: rgb(221, 218, 218);
+    width: 200px;
+}
+

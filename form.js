@@ -12,6 +12,7 @@ function check(){
 
             for(i=0;i<box.length;i++){
                 data[i].innerHTML = box[i].value;
+                data[i].className="myclass";
 
             }
 
