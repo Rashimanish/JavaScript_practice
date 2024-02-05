@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>
+            Select By Tag Name
+        </h2>
+        <input placeholder="Enter First Name"><br><br>
+        <input placeholder="Enter Last Name"><br><br>
+        <input placeholder="Enter Country Name"><br><br>
+        <button onclick="check()">submit</button>
+
+        <p> </p>
+        <p> </p>
+        <p> </p>
+    </div>
+    <!------Java Script-->
+
+    <script>
+        function check(){
+            box = document.getElementsByTagName("input");
+            data = document.getElementsByTagName("p");
+
+            data[0].innerHTML = box[0].value;
+            data[1].innerHTML = box[1].value;
+            data[2].innerHTML = box[2].value;
+        }
+    </script>
+</body>
+</html>
