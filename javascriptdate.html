@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\styleform.html">
+    <script src="..\form.js"></script>
+    <style>
+        h2{
+            color: red;
+            font-size: 20px;
+        }
+        p{
+            height: 60px;
+            width: 100px;
+            background-color: yellow;
+            padding: 10px;
+        }
+        button{
+            color: grey;
+            background-color: blue;
+            width: 75px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Java Script Date</h2>
+    <p id="p1"> </p>
+
+    <button onclick="start()"> start </button>
+    <button onclick="stop()"> stop </button>    
+
+    <script>
+
+        // Java Script Date
+function changeColor(){
+    date = new Date();
+    hour = date.getHours();
+    minute = date.getMinutes();
+    second = date.getSeconds();
+    timing = date.toLocaleTimeString(); 
+
+    displaytime = document.getElementById("p1");
+    displaytime.innerHTML = timing;
+        //change color based on the seconds - are odd / even
+
+        if(second%2==0){
+            displaytime.style.color="red"
+        } else{
+            display.time.style.color="blue";
+        }
+    }
+    function start(){
+       clear = setInterval(changeColor,1000); //1000 milliseconds = 1 second
+    }
+
+    function stop(){
+        clearInterval(clear);
+    }
+    
+    </script>
+
+  
+</body>
+</html>
